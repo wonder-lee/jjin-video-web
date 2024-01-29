@@ -19,7 +19,9 @@ const VideoList = () => {
   return (
     <div>
       {videoList.list.length > 0 ? (
-        videoList.list.map((data) => <PostCard data={data} />)
+        videoList.list.map((data: any) => (
+          <PostCard data={data} key={data.title} />
+        ))
       ) : (
         <div className="flex flex-col gap-4 w-full">
           <div className="skeleton h-32 w-full"></div>
