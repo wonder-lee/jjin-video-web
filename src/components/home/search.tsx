@@ -41,16 +41,14 @@ const Search = () => {
       >
         <Filter />
         <div className="flex justify-center">
-          <div className="join mt-3">
-            <div className="w-full">
-              <input
-                onChange={handleChange}
-                name="keyword"
-                autoComplete="off"
-                placeholder=""
-                className="input input-bordered join-item w-full"
-              />
-            </div>
+          <div className="join mt-3 w-full">
+            <input
+              onChange={handleChange}
+              name="keyword"
+              autoComplete="off"
+              placeholder=""
+              className="input input-bordered join-item w-full"
+            />
             <div className="indicator">
               <button type="submit" className="btn join-item">
                 🔍
