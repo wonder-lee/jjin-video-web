@@ -33,7 +33,7 @@ const Filter = () => {
           <div
             tabIndex={0}
             role="button"
-            className="m-1 flex flex-col items-center text-gray-600 gap-1"
+            className="m-1 flex flex-col items-center text-gray-500 gap-1"
           >
             <span className="text-[20px]">{icon}</span>
             <span className="text-[10px]">{title}</span>
