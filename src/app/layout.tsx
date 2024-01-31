@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-zinc-200">
-        <main className="max-sm:w-[100vw] w-[500px] mx-auto bg-red-100">
+        <main className="max-sm:w-[100vw] w-[500px] mx-auto bg-gray-50">
           <Header />
           <LayoutProvider>{children}</LayoutProvider>
         </main>

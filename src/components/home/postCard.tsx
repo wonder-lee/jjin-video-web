@@ -20,8 +20,8 @@ const PostCard = ({
     <div className="min-h-[120px] pt-4 border-solid border-b">
       <div className="flex flex-row gap-3 justify-between">
         <div>
-          <div className="text-[15px] min-h-[50px] font-medium">
-            <h2 className="break-keep">{truncateString(title, 33)}</h2>
+          <div className="text-[15px] font-medium mb-2">
+            <h2 className="break-keep">{truncateString(title, 30)}</h2>
           </div>
           <p className="text-[12px] text-gray-500">
             {truncateString(channelName, 10)}

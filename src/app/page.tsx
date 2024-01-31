@@ -9,7 +9,7 @@ export default async function Home({
 }) {
   return (
     <div>
-      <section className="min-h-screen bg-white px-5 pb-[132px] rounded-t-2xl">
+      <section className="min-h-screen bg-white px-5 pt-[80px] pb-[132px] rounded-t-2xl">
         {search ? <VideoList /> : <PostList />}
       </section>
       <Search />
