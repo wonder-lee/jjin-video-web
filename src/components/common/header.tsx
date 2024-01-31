@@ -1,12 +1,18 @@
-import React from "react";
-import JJIN_ICON from "@/static/jjin-logo-02.svg";
-// import JJIN_ICON from "@/static/jjin-logo.svg";
+"use client";
+import React, { FormEvent } from "react";
+import { useRouter } from "next/navigation";
+import JJIN_ICON from "@/static/jjin-logo.svg";
 
 const Header = () => {
+  const router = useRouter();
+  const onClicHome = (e: FormEvent) => {
+    e.preventDefault();
+    // setFormData({ keyword: "" });
+    router.push("/");
+  };
   return (
-    <header className="max-sm:w-[100vw] w-[500px] fixed top-0 backdrop-blur-lg">
-      {/* <JJIN_ICON className="fill-rose-500" /> */}
-      <JJIN_ICON />
+    <header className="max-sm:w-[100vw] w-[500px] fixed top-0 backdrop-blur-lg px-5">
+      <JJIN_ICON onClick={onClicHome} className="fill-rose-500" />
     </header>
   );
 };

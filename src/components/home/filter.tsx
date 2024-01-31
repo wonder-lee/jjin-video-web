@@ -51,7 +51,7 @@ const Filter = ({ setFormData }: any) => {
           </ul>
         </div>
       ))}
-      <button onClick={onClicHome} className="btn btn-circle">
+      <button onClick={onClicHome} className="btn btn-circle text-rose-500">
         <AiFillHome />
       </button>
     </div>
