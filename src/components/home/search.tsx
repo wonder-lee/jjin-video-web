@@ -24,10 +24,12 @@ const Search = () => {
     e.preventDefault();
     const { keyword } = formData;
     if (keyword) {
+      setVideoList({ list: [] });
       setIsSearch(true);
       router.push("?search=true");
       const data = await getListByKeyword({ keyword });
       setVideoList(data);
+      setFormData({ keyword: "" });
     } else {
       router.push("/");
     }
@@ -45,15 +47,14 @@ const Search = () => {
             <input
               onChange={handleChange}
               name="keyword"
+              value={formData.keyword}
               autoComplete="off"
               placeholder=""
               className="input input-bordered join-item w-full"
             />
-            <div className="indicator">
-              <button type="submit" className="btn join-item">
-                🔍
-              </button>
-            </div>
+            <button type="submit" className="btn join-item">
+              🔍
+            </button>
           </div>
         </div>
       </form>

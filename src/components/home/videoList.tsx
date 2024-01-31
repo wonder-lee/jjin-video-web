@@ -5,6 +5,7 @@ import { useRecoilValue } from "recoil";
 import { videoListAtom } from "@/recoil/videoListAtom";
 import { isSearchAtom } from "@/recoil/isSearchAtom";
 import PostCard from "./postCard";
+import PostSkeleton from "../common/postSkeleton";
 
 const VideoList = () => {
   const router = useRouter();
@@ -18,18 +19,11 @@ const VideoList = () => {
   }, [isSearch]);
   return (
     <div>
-      {videoList.list.length > 0 ? (
-        videoList.list.map((data: any) => (
-          <PostCard data={data} key={data.title} />
-        ))
-      ) : (
-        <div className="flex flex-col gap-4 w-full">
-          <div className="skeleton h-32 w-full"></div>
-          <div className="skeleton h-4 w-28"></div>
-          <div className="skeleton h-4 w-full"></div>
-          <div className="skeleton h-4 w-full"></div>
-        </div>
-      )}
+      {videoList.list.length > 0
+        ? videoList.list.map((data: any) => (
+            <PostCard data={data} key={data.title} />
+          ))
+        : new Array(3).fill("").map(() => <PostSkeleton />)}
     </div>
   );
 };
