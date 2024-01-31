@@ -3,13 +3,13 @@ import React, { ChangeEvent, FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import Filter from "./filter";
 import { getListByKeyword } from "@/api/getListByKeyword";
-import { useSetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 import { videoListAtom } from "@/recoil/videoListAtom";
 import { isSearchAtom } from "@/recoil/isSearchAtom";
 const Search = () => {
   const router = useRouter();
-  const setVideoList = useSetRecoilState(videoListAtom);
-  const setIsSearch = useSetRecoilState(isSearchAtom);
+  const [videoList, setVideoList] = useRecoilState(videoListAtom);
+  const [isSearch, setIsSearch] = useRecoilState(isSearchAtom);
   const [formData, setFormData] = useState({
     keyword: "",
   });
@@ -29,7 +29,7 @@ const Search = () => {
       router.push("?search=true");
       const data = await getListByKeyword({ keyword });
       setVideoList(data);
-      setFormData({ keyword: "" });
+      // setFormData({ keyword: "" });
     } else {
       router.push("/");
     }
@@ -41,7 +41,7 @@ const Search = () => {
         onSubmit={handleSubmit}
         className="max-sm:w-[100vw] w-[500px] py-3 px-4 fixed bottom-0 bg-gray-50 mx-auto left-1/2 transform -translate-x-1/2 shadow-lg  border-solid border-t border-gray-200"
       >
-        <Filter />
+        <Filter setFormData={setFormData} />
         <div className="flex justify-center">
           <div className="join mt-3 w-full">
             <input
@@ -51,8 +51,13 @@ const Search = () => {
               autoComplete="off"
               placeholder=""
               className="input input-bordered join-item w-full"
+              disabled={isSearch && videoList.list.length === 0}
             />
-            <button type="submit" className="btn join-item">
+            <button
+              type="submit"
+              className="btn join-item"
+              disabled={isSearch && videoList.list.length === 0}
+            >
               🔍
             </button>
           </div>

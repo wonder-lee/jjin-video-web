@@ -23,7 +23,7 @@ const VideoList = () => {
         ? videoList.list.map((data: any) => (
             <PostCard data={data} key={data.title} />
           ))
-        : new Array(3).fill("").map(() => <PostSkeleton />)}
+        : new Array(3).fill("").map((_, index) => <PostSkeleton key={index} />)}
     </div>
   );
 };

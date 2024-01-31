@@ -10,7 +10,7 @@ import {
   AiOutlineHome,
 } from "react-icons/ai";
 
-const Filter = () => {
+const Filter = ({ setFormData }: any) => {
   const router = useRouter();
   const FILTER_ITEMS = [
     // { title: "조회수", items: ["500", "1000"] },
@@ -24,6 +24,7 @@ const Filter = () => {
   ];
   const onClicHome = (e: FormEvent) => {
     e.preventDefault();
+    setFormData({ keyword: "" });
     router.push("/");
   };
   return (
