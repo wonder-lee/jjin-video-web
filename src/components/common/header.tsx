@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <header className="max-sm:w-[100vw] w-[500px] fixed top-0 backdrop-blur-lg px-5">
-      <JJIN_ICON onClick={onClicHome} className="fill-rose-500" />
+      <JJIN_ICON className="fill-rose-500" />
     </header>
   );
 };

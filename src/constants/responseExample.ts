@@ -5,7 +5,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "개이득",
       title: "노아 AI, 뷰트랩(viewtrap) | 심플 무료 버전",
-      publishedTime: 1,
+      publishedTime: "1 weeks ago",
       viewCount: 16944,
       browseId: "UCaHMzuTxdZ7QH1L-OEbaDsQ",
       videoId: "W0al4fsBNTg",
@@ -33,7 +33,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -61,7 +61,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -89,7 +89,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -117,7 +117,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -145,7 +145,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "개이득",
       title: "노아 AI, 뷰트랩(viewtrap) | 심플 무료 버전",
-      publishedTime: 1,
+      publishedTime: "1 weeks ago",
       viewCount: 16944,
       browseId: "UCaHMzuTxdZ7QH1L-OEbaDsQ",
       videoId: "W0al4fsBNTg",
@@ -173,7 +173,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -201,7 +201,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -229,7 +229,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -257,7 +257,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -285,7 +285,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "개이득",
       title: "노아 AI, 뷰트랩(viewtrap) | 심플 무료 버전",
-      publishedTime: 1,
+      publishedTime: "1 weeks ago",
       viewCount: 16944,
       browseId: "UCaHMzuTxdZ7QH1L-OEbaDsQ",
       videoId: "W0al4fsBNTg",
@@ -313,7 +313,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -341,7 +341,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -369,7 +369,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -397,7 +397,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -425,7 +425,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "개이득",
       title: "노아 AI, 뷰트랩(viewtrap) | 심플 무료 버전",
-      publishedTime: 1,
+      publishedTime: "1 weeks ago",
       viewCount: 16944,
       browseId: "UCaHMzuTxdZ7QH1L-OEbaDsQ",
       videoId: "W0al4fsBNTg",
@@ -453,7 +453,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -481,7 +481,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -509,7 +509,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -537,7 +537,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -565,7 +565,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "개이득",
       title: "노아 AI, 뷰트랩(viewtrap) | 심플 무료 버전",
-      publishedTime: 1,
+      publishedTime: "1 weeks ago",
       viewCount: 16944,
       browseId: "UCaHMzuTxdZ7QH1L-OEbaDsQ",
       videoId: "W0al4fsBNTg",
@@ -593,7 +593,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -621,7 +621,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -649,7 +649,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -677,7 +677,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -705,7 +705,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "개이득",
       title: "노아 AI, 뷰트랩(viewtrap) | 심플 무료 버전",
-      publishedTime: 1,
+      publishedTime: "1 weeks ago",
       viewCount: 16944,
       browseId: "UCaHMzuTxdZ7QH1L-OEbaDsQ",
       videoId: "W0al4fsBNTg",
@@ -733,7 +733,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -761,7 +761,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -789,7 +789,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",
@@ -817,7 +817,7 @@ const RESPONSE_EXAMPLE = {
     {
       channelName: "모얼포스트",
       title: "워드프레스, 티스토리 아직도 속으실 건가요?",
-      publishedTime: 3,
+      publishedTime: "3 weeks ago",
       viewCount: 2572,
       browseId: "UCCJBzmnxeadp0U4q2eCMXSw",
       videoId: "ORw2vsVWF9o",

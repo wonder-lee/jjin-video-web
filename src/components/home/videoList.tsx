@@ -20,8 +20,8 @@ const VideoList = () => {
   return (
     <div>
       {videoList.list.length > 0
-        ? videoList.list.map((data: any) => (
-            <PostCard data={data} key={data.title} />
+        ? videoList.list.map((data: any, index: number) => (
+            <PostCard data={data} key={data.title} index={index} />
           ))
         : new Array(3).fill("").map((_, index) => <PostSkeleton key={index} />)}
     </div>
