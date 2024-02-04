@@ -2,14 +2,16 @@ import React from "react";
 
 const PostSkeleton = () => {
   return (
-    <div className="flex flex-col gap-4 w-full py-6 mb-4 border-solid border-b">
-      <div className="flex gap-4 items-center">
-        <div className="flex flex-col gap-4">
-          <div className="skeleton h-4 w-[230px]"></div>
-          <div className="skeleton h-4 w-[150px]"></div>
-          <div className="skeleton h-4 w-[150px]"></div>
-        </div>
-        <div className="skeleton w-[80px] h-[80px] rounded-full shrink-0"></div>
+    <div className="flex pt-4 justify-between w-full">
+      <div className="flex flex-col gap-4 mb-4 w-[180px]">
+        <div className="skeleton h-[90px]"></div>
+        <div className="skeleton h-4"></div>
+      </div>
+      <div className="flex flex-col gap-4 w-52 items-end">
+        <div className="skeleton h-4 w-28"></div>
+        <div className="skeleton h-4 w-20"></div>
+        <div className="skeleton h-4 w-20"></div>
+        <div className="skeleton h-4 w-20"></div>
       </div>
     </div>
   );
