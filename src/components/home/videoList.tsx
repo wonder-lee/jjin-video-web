@@ -8,14 +8,16 @@ import { selectedVideoIndexAtom } from "@/recoil/selectedVideoIndexAtom";
 import PostCard from "@/components/home/postCard";
 import PostSkeleton from "@/components/common/postSkeleton";
 
-const VideoList = () => {
+const VideoList = ({ search }: any) => {
   const { push } = useRouter();
   const videoList = useRecoilValue(videoListAtom);
   const isSearch = useRecoilValue(isSearchAtom);
   const setSeletedVideoIndex = useSetRecoilState(selectedVideoIndexAtom);
 
   const onClickVideoCard = (index: number) => {
-    setSeletedVideoIndex(index);
+    if (search) {
+      setSeletedVideoIndex(index);
+    }
   };
 
   useEffect(() => {
@@ -31,7 +33,12 @@ const VideoList = () => {
               onClick={() => onClickVideoCard(index)}
               key={index + data.videoId}
             >
-              <PostCard data={data} key={data.title} index={index} />
+              <PostCard
+                data={data}
+                key={data.title}
+                index={index}
+                search={search}
+              />
             </div>
           ))
         : new Array(3).fill("").map((_, index) => <PostSkeleton key={index} />)}

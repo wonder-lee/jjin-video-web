@@ -7,6 +7,7 @@ import convertToKoreanTime from "@/utils/convertToKoreanTime";
 interface Props {
   data: any;
   index: number;
+  search: boolean;
 }
 
 const PostCard = ({
@@ -20,10 +21,11 @@ const PostCard = ({
     point,
   },
   index,
+  search,
 }: Props) => {
   return (
     <div className="min-h-[120px] pt-4 border-solid border-b">
-      <label htmlFor="my-drawer">
+      <label htmlFor={search ? "my-drawer" : ""}>
         <div className="flex flex-row gap-3 justify-between cursor-pointer">
           {thumbnails.length > 0 && (
             <div className="flex flex-col gap-1">

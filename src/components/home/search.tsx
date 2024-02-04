@@ -20,18 +20,18 @@ const Search = () => {
       [name]: value,
     });
   };
-  const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+  const onKeyDown = async (e: KeyboardEvent<HTMLInputElement>) => {
     const { key } = e;
     if (key === "Enter") {
-      console.log("input enter");
+      e.preventDefault();
       const { keyword } = formData;
-      requestSearchByKeyword(keyword);
+      await requestSearchByKeyword(keyword);
     }
   };
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const { keyword } = formData;
-    requestSearchByKeyword(keyword);
+    await requestSearchByKeyword(keyword);
   };
   const requestSearchByKeyword = async (keyword: string) => {
     if (keyword) {
@@ -40,7 +40,6 @@ const Search = () => {
       router.push("?search=true");
       const { list } = await getListByKeyword({ keyword });
       setVideoList(list);
-      // setFormData({ keyword: "" });
     } else {
       router.push("/");
     }
@@ -58,6 +57,7 @@ const Search = () => {
             <input
               onChange={onChange}
               onKeyDown={onKeyDown}
+              type="text"
               name="keyword"
               value={formData.keyword}
               autoComplete="off"

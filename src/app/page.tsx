@@ -12,21 +12,16 @@ export default async function Home({
     "min-h-screen bg-white px-5 pb-[132px] rounded-t-2xl";
   return (
     <div>
-      {search ? (
-        <Drawer>
-          <section className={defaultSectionStyle}>
-            <VideoList />
-          </section>
-          <Search />
-        </Drawer>
-      ) : (
-        <>
-          <section className={`${defaultSectionStyle} pt-[80px]`}>
-            <PostList />
-          </section>
-          <Search />
-        </>
-      )}
+      <Drawer>
+        <section className={defaultSectionStyle}>
+          {search ? (
+            <VideoList search={search} />
+          ) : (
+            <PostList search={search} />
+          )}
+        </section>
+        <Search />
+      </Drawer>
     </div>
   );
 }
