@@ -1,7 +1,6 @@
 import React from "react";
 import PostCard from "./postCard";
 import { RESPONSE_EXAMPLE } from "@/constants/responseExample";
-import Badge from "../common/badge";
 
 const PostList = () => {
   return (

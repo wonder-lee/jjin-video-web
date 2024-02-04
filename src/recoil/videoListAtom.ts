@@ -1,10 +1,22 @@
 import { atom } from "recoil";
 
-const videoListAtom = atom({
+interface Video {
+  channelName: string;
+  title: string;
+  publishedTime: string;
+  viewCount: number;
+  browseId: string;
+  videoId: string;
+  subscribers: number;
+  id: number;
+  point: number;
+  thumbnails: any;
+  channelThumbnail: any;
+}
+
+const videoListAtom = atom<Video[]>({
   key: "videoListAtom",
-  default: {
-    list: [],
-  },
+  default: [],
 });
 
 export { videoListAtom };

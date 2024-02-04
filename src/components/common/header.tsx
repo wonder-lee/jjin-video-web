@@ -11,7 +11,7 @@ const Header = () => {
     router.push("/");
   };
   return (
-    <header className="max-sm:w-[100vw] w-[500px] fixed top-0 backdrop-blur-lg px-5">
+    <header className="max-sm:w-[100vw] w-[500px] fixed top-0 backdrop-blur-lg px-5 z-10">
       <JJIN_ICON className="fill-rose-500" />
     </header>
   );
