@@ -24,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script src="https://developers.kakao.com/sdk/js/kakao.js"></Script>
+        <meta name="google-adsense-account" content="ca-pub-9954831528492559" />
       </head>
       <body className="bg-zinc-200">
         <main className="max-sm:w-[100vw] w-[500px] mx-auto bg-gray-50">

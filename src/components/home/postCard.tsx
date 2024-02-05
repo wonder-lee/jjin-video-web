@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Badge from "../common/badge";
 import truncateString from "@/utils/truncateString";
@@ -19,13 +21,23 @@ const PostCard = ({
     viewCount,
     publishedTime,
     point,
+    videoId,
   },
   index,
   search,
 }: Props) => {
+  const { push } = useRouter();
+  const onClickPostCard = (videoId: string) => {
+    if (!search) {
+      push(videoId);
+    }
+  };
   return (
     <div className="min-h-[120px] pt-4 border-solid border-b">
-      <label htmlFor={search ? "my-drawer" : ""}>
+      <label
+        htmlFor={search ? "my-drawer" : ""}
+        onClick={() => onClickPostCard(videoId)}
+      >
         <div className="flex flex-row gap-3 justify-between cursor-pointer">
           {thumbnails.length > 0 && (
             <div className="flex flex-col gap-1">
@@ -41,14 +53,16 @@ const PostCard = ({
               </div>
             </div>
           )}
-          <div className="flex flex-col content-around">
-            <Badge index={index} point={point} />
-            <div className="flex flex-col gap-1 text-[14px] text-right px-3 py-1">
-              <p>{subscribers.toLocaleString()}명</p>
-              <p>{viewCount.toLocaleString()}회</p>
-              <p>{convertToKoreanTime(publishedTime)}</p>
+          {search && (
+            <div className="flex flex-col content-around">
+              <Badge index={index} point={point} />
+              <div className="flex flex-col gap-1 text-[14px] text-right px-3 py-1">
+                <p>{subscribers.toLocaleString()}명</p>
+                <p>{viewCount.toLocaleString()}회</p>
+                <p>{convertToKoreanTime(publishedTime)}</p>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </label>
     </div>
