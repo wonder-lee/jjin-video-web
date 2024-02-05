@@ -1,9 +1,10 @@
+import Image from "next/image";
 import PostDetailContainer from "@/components/common/postDetailContainer";
 export default function youtube_tool() {
   return (
     <PostDetailContainer>
       <h2>
-        <b>"유튜브 영상 컨텐츠, 성공적인 제작법!"</b>
+        <b>유튜브 영상 컨텐츠, 성공적인 제작법!</b>
       </h2>
       <h3>목차</h3>
       <ul>
@@ -14,7 +15,7 @@ export default function youtube_tool() {
         <li>후기</li>
       </ul>
       <h3>요약</h3>
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1542039375-28138150cc31?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHlvdXR1YmUlMjB2aWRlb3xlbnwwfHwwfHx8Mg%3D%3D"
         alt="youtube_video"
       />
@@ -38,7 +39,7 @@ export default function youtube_tool() {
       </p>
       <h3>유튜브 영상 제작의 주요 요소</h3>
       <p>
-        유튜브 영상 제작의 주요 요소는 결국 "시청자"입니다. 시청자의 관심사와
+        유튜브 영상 제작의 주요 요소는 결국 시청자입니다. 시청자의 관심사와
         선호도를 고려한 콘텐츠를 만들면 성공적인 유튜브 영상 컨텐츠를 만들 수
         있습니다.
       </p>
@@ -62,7 +63,7 @@ export default function youtube_tool() {
         디자인 능력도 매우 중요합니다. 이런 팁들을 기억하면 크게 성공한 유튜브
         컨텐츠 크리에이터가 될 수 있을 것입니다. 화이팅!
       </p>
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1620679006676-dc22cecb6fd5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8eW91dHViZSUyMHZpZGVvfGVufDB8fDB8fHwy"
         alt="youtube_video"
       />

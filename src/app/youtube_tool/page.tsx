@@ -1,9 +1,10 @@
+import Image from "next/image";
 import PostDetailContainer from "@/components/common/postDetailContainer";
 export default function youtube_tool() {
   return (
     <PostDetailContainer>
       <h2>
-        <b>"창작자를 위한 유튜브 영상 컨텐츠 제작법"</b>
+        <b>창작자를 위한 유튜브 영상 컨텐츠 제작법</b>
       </h2>
       <p>table of contents</p>
       <ul>
@@ -13,14 +14,14 @@ export default function youtube_tool() {
         <li>업로드와 SEO 최적화</li>
         <li>영상 마케팅 전략</li>
       </ul>
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1513398886898-6ae5ff7820f3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHlvdXR1YmUlMjB2aWRlb3xlbnwwfHwwfHx8Mg%3D%3D"
         alt="youtube_video"
       />
-      [surmary] 이 글에서는 창작자들이 유튜브 영상 컨텐츠를 제작하는 법을
-      상세하게 안내합니다. 아이디어 구상부터 스크립트 작성, 영상 촬영 및 편집,
-      그리고 유튜브 업로드 및 SEO 최적화, 그리고 마지막으로 영상 마케팅
-      전략까지에 대해 설명하겠습니다. [contents]
+      이 글에서는 창작자들이 유튜브 영상 컨텐츠를 제작하는 법을 상세하게
+      안내합니다. 아이디어 구상부터 스크립트 작성, 영상 촬영 및 편집, 그리고
+      유튜브 업로드 및 SEO 최적화, 그리고 마지막으로 영상 마케팅 전략까지에 대해
+      설명하겠습니다.
       <h3>아이디어 생각하기</h3>
       창작의 첫 단계는 아이디어를 생각하는 것입니다. 여러분의 콘텐츠가 다루는
       주제에 대해 깊이 생각하고, 독창적이면서도 관심을 끌 수 있는 아이디어를
@@ -46,7 +47,7 @@ export default function youtube_tool() {
       만들어낼 수 있을 것입니다. 다시한번 강조하지만 아이디어 구상, 스크립트
       작성, 영상 촬영 및 편집, SEO 최적화, 그리고 마케팅 전략까지 체계적으로
       진행해야 성공적인 유튜브 영상 컨텐츠를 만들어낼 수 있습니다.
-      <img
+      <Image
         src="https://images.unsplash.com/photo-1620679006676-dc22cecb6fd5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8eW91dHViZSUyMHZpZGVvfGVufDB8fDB8fHwy"
         alt="youtube_video"
       />
