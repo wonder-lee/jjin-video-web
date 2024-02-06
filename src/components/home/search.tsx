@@ -34,13 +34,20 @@ const Search = () => {
     await requestSearchByKeyword(keyword);
   };
   const requestSearchByKeyword = async (keyword: string) => {
-    if (keyword) {
-      setVideoList([]);
-      setIsSearch(true);
-      router.push("?search=true");
-      const { list } = await getListByKeyword({ keyword });
-      setVideoList(list);
-    } else {
+    try {
+      if (keyword) {
+        setVideoList([]);
+        setIsSearch(true);
+        router.push("?search=true");
+        const { list } = await getListByKeyword({ keyword });
+        setVideoList(list);
+      } else {
+        router.push("/");
+      }
+    } catch (error) {
+      alert("잠시 후 다시 시도해주세요.");
+      setIsSearch(false);
+      setFormData({ keyword: "" });
       router.push("/");
     }
   };
