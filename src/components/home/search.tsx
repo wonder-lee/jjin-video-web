@@ -6,6 +6,7 @@ import { getListByKeyword } from "@/api/getListByKeyword";
 import { useRecoilState } from "recoil";
 import { videoListAtom } from "@/recoil/videoListAtom";
 import { isSearchAtom } from "@/recoil/isSearchAtom";
+import isTwoWords from "@/utils/isTwoWords";
 const Search = () => {
   const router = useRouter();
   const [videoList, setVideoList] = useRecoilState(videoListAtom);
@@ -35,14 +36,22 @@ const Search = () => {
   };
   const requestSearchByKeyword = async (keyword: string) => {
     try {
-      if (keyword) {
+      if (!keyword) {
+        return router.push("/");
+      }
+
+      const isValid = isTwoWords(keyword);
+
+      if (keyword && !isValid) {
+        return alert("단어 2개로 검색해주세요. (ex:강아지 시츄)");
+      }
+
+      if (keyword && isValid) {
         setVideoList([]);
         setIsSearch(true);
         router.push("?search=true");
         const { list } = await getListByKeyword({ keyword });
         setVideoList(list);
-      } else {
-        router.push("/");
       }
     } catch (error) {
       alert("잠시 후 다시 시도해주세요.");
