@@ -33,12 +33,17 @@ const VideoDetail = ({ data }: any) => {
         className="mb-3"
       />
       <div className="flex items-center gap-2 mb-3">
-        <Image
+        {/* <Image
           className="w-[40px] h-[40px] rounded-3xl border"
           src={data?.channelThumbnail?.url}
           width={50}
           height={50}
           alt={data?.channelName}
+        /> */}
+        <img
+          src={data?.channelThumbnail?.url}
+          alt={data?.channelName}
+          className="w-[40px] h-[40px] rounded-3xl border"
         />
         <h2>{data?.channelName}</h2>
       </div>

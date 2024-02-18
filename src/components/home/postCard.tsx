@@ -41,12 +41,17 @@ const PostCard = ({
         <div className="flex flex-row gap-3 justify-between cursor-pointer">
           {thumbnails.length > 0 && (
             <div className="flex flex-col gap-1">
-              <Image
+              {/* <Image
                 className="w-[180px] h-[90px] object-cover object-center rounded-md"
                 src={thumbnails[0].url}
                 width={180}
                 height={90}
                 alt={title}
+              /> */}
+              <img
+                src={thumbnails[0].url}
+                alt={title}
+                className="w-[180px] h-[90px] object-cover object-center rounded-md"
               />
               <div className="w-[180px] text-[12px] my-2">
                 <h2 className="break-keep">{truncateString(title, 30)}</h2>
